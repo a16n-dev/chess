@@ -22,7 +22,7 @@ const ChessGame = ({}: ChessGameProps) => {
   const [moveIndexOverride, setMoveIndexOverride] = useState<number | null>(
     null,
   );
-  const [game, setGame] = useState<ChessGameInfo>({
+  const [game] = useState<ChessGameInfo>({
     playingAs: Color.WHITE,
     bot: bots[1],
   });
